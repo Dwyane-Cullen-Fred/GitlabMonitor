@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.gitmining.monitor.bean.ProjectCommit;
 import org.gitmining.monitor.bean.Student;
 import org.gitmining.monitor.bean.StudentComment;
 import org.gitmining.monitor.bean.StudentCommit;
@@ -88,6 +87,7 @@ public class StudentService {
 		return result;
 	}
 
+	@SuppressWarnings("rawtypes")
 	public Map<String, List> getStudentEventItem(String student, String startDay, String endDay){
 		if(startDay==null){
 			startDay="2016-01-01";

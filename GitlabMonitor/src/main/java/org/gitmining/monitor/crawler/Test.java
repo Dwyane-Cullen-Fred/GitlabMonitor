@@ -3,7 +3,6 @@ package org.gitmining.monitor.crawler;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 
 import org.gitmining.monitor.crawlerdao.ProjectCrawlerDao;

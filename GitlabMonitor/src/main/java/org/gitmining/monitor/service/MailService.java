@@ -113,7 +113,7 @@ public class MailService {
 	
 	public boolean sendUpdateSuccessMail(String day){
 		try{
-			Calendar calendar = Calendar.getInstance();
+			Calendar.getInstance();
 			simpleMailMessage.setText(day+" data no error, well done!");
 			simpleMailMessage.setSubject(day+" gitlab data update succeed");
 			javaMailSender.send(simpleMailMessage);

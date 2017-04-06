@@ -1,8 +1,6 @@
 package org.gitmining.monitor.crawler;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -11,16 +9,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.enterprise.inject.New;
-
 import org.gitmining.monitor.bean.Branch;
 import org.gitmining.monitor.bean.Project;
-import org.gitmining.monitor.bean.Student;
 import org.gitmining.monitor.crawlerdao.ProjectCrawlerDao;
-import org.gitmining.monitor.crawlerdao.StudentCrawlerDao;
 
 import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 public class StudentCrawler {
@@ -57,11 +50,11 @@ public class StudentCrawler {
 	
 	public static void main(String[] args){
 		System.out.println("start update!");
-		GroupCrawler groupCrawler = new GroupCrawler();
-		GroupProjectCrawler groupProjectCrawler = new GroupProjectCrawler();
-		BranchCrawler branchCrawler = new BranchCrawler();
-		CommitCrawler commitCrawler = new CommitCrawler();
-		FileCrawler fileCrawler = new FileCrawler();
+		new GroupCrawler();
+		new GroupProjectCrawler();
+		new BranchCrawler();
+		new CommitCrawler();
+		new FileCrawler();
 		CommitStatistic commitStatistic = new CommitStatistic();
 		
 		//groupCrawler.crawlGroup();

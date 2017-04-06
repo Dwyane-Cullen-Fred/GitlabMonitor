@@ -1,7 +1,6 @@
 package org.gitmining.monitor.crawler;
 
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 public class GetURLConnection {

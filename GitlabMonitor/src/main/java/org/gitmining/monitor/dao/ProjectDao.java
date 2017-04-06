@@ -7,7 +7,6 @@ import java.util.Map;
 import org.gitmining.monitor.bean.DeadLine;
 import org.gitmining.monitor.bean.ProjectComment;
 import org.gitmining.monitor.bean.ProjectCommit;
-import org.gitmining.monitor.bean.ProjectEvent;
 import org.gitmining.monitor.bean.ProjectVO;
 import org.gitmining.monitor.bean.Student;
 import org.gitmining.monitor.bean.TeamVO;

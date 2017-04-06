@@ -2,6 +2,7 @@ package org.gitmining.monitor.bean;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class RangeColor implements Serializable{
 	int from;
     int to;

@@ -1,12 +1,9 @@
 package org.gitmining.monitor.crawler;
 
 import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +11,6 @@ import java.util.Map;
 import org.gitmining.monitor.bean.Branch;
 import org.gitmining.monitor.bean.Project;
 import org.gitmining.monitor.crawlerdao.ProjectCrawlerDao;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonParser;

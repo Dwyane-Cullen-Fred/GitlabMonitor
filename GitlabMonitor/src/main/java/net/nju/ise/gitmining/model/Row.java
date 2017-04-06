@@ -16,6 +16,7 @@ public class Row {
 		this.values.addAll(values);
 	}
 
+	@SuppressWarnings("unchecked")
 	public <T> T getIndexValue(int index){
 		if(index >= values.size()){
 			return null;

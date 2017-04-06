@@ -1,9 +1,5 @@
 package org.gitmining.monitor.crawler;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
@@ -54,6 +50,7 @@ public class CommitStatistic {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void countStudentCommit(){
 		StudentCrawlerDao studentCrawlerDao = new StudentCrawlerDao();
 		ProjectCrawlerDao projectCrawlerDao = new ProjectCrawlerDao();

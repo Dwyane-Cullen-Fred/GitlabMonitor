@@ -6,7 +6,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.util.List;
 
-import org.gitmining.monitor.bean.Branch;
 import org.gitmining.monitor.bean.Project;
 import org.gitmining.monitor.crawlerdao.ProjectCrawlerDao;
 
@@ -37,10 +36,10 @@ public class EventCrawler {
 						JsonArray jsonArray = new JsonParser().parse(response)
 								.getAsJsonArray();
 						for(int i = 0 ; i < jsonArray.size() ; i ++){
-							String action_name = jsonArray.get(i).getAsJsonObject().get("action_name").getAsString();
-							String author_name = jsonArray.get(i).getAsJsonObject().get("author_username").getAsString();
-							String day = jsonArray.get(i).getAsJsonObject().get("created_at").getAsString().split("T")[0];
-							int projectID = projectInfo.get(m).getId();
+							jsonArray.get(i).getAsJsonObject().get("action_name").getAsString();
+							jsonArray.get(i).getAsJsonObject().get("author_username").getAsString();
+							jsonArray.get(i).getAsJsonObject().get("created_at").getAsString().split("T");
+							projectInfo.get(m).getId();
 							
 							System.out.println(projectInfo.get(m).getId() + ":" + jsonArray.get(i).getAsJsonObject().get("action_name").getAsString() + "------" + jsonArray.get(i).getAsJsonObject().get("created_at").getAsString().split("T")[0]);
 							//projectCrawlerDao.insertCommit(id, author_name, author_email, day, add_line, delete_line, file, projectID);
