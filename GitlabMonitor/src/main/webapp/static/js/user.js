@@ -50,7 +50,9 @@ function checkUser(item,value){
 
 function tryRegister(){
 	
-	if($('#emailCheck').val()=="ok" &&  $('#nameCheck').val()=="ok" && $('#repeatPasswordCheck').val()=="ok"){
+	if($('#emailCheck').val()=="ok" &&  $('#nameCheck').val()=="ok"
+//		&& $('#repeatPasswordCheck').val()=="ok"
+			){
 		$('#registerForm').submit();
 	}else{
 		return;
